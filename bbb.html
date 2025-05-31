@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>personal profile</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+    }
+    .top-RIGHT-image {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+    }
+    /* Sidebar */
+    nav {
+      background: #1b161aa0;
+      width: 220px;
+      min-height: 100vh;
+      padding-top: 30px;
+      position: fixed;
+    }
+
+    nav a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    nav a:hover, nav a.active {
+      background: #34495e;
+    }
+
+    /* Main content */
+    .content {
+      margin-left: 220px;
+      padding: 40px 20px;
+      flex: 1;
+      background-color: #f4f4f4;
+    }
+
+    section {
+      display: none;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section.active {
+      display: block;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+      }
+
+      nav a {
+        padding: 10px;
+      }
+
+      .content {
+        margin-left: 0;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <nav>
+    <a href="#" class="active" onclick="showTab('home', this)">Home</a>
+    <a href="#" onclick="showTab('about', this)">About Me</a>
+    <a href="#" onclick="showTab('contact', this)">Contact</a>
+    <a href="#" onclick="showTab('services', this)">Services</a>
+    <a href="#" onclick="showTab('career', this)">Career</a>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div class="content">
+    <section id="home" class="active">
+  <img src="image21.jpg" alt="TOP-left-IMAGE" class="top-RIGHT-image width="300" height="300">
+      <h2>Home</h2>
+      <p> Tunde Blessing, passionate about Web Development technology, Fashion Designer, photography. <br>Here you can learn about me, the services I offer, and how we can connect</p>
+       
+    </section>
+      
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>My name is Blessing Tunde, I am a student of the federal University of lokoja, studying Computer Science. I am a passionate individual with a keen interest in technology and its applications. I have a strong foundation in programming languages such as HTML, CSS, JavaScript, and Python. In addition to my technical skills, I also have experience in sales and marketing, which has helped me develop strong communication and interpersonal skills.</p>
+            <p>In my free time, I enjoy reading books, traveling to new places, and cooking. I am also interested in fashion media and photography, which allows me to express my creativity in different ways. I believe that continuous learning is essential for personal and professional growth, and I am always looking for opportunities to expand my knowledge and skills.</p>
+            <p>Overall, I am a dedicated and motivated individual who is eager to make a positive impact in the world through technology and innovation.</p> <br></br>
+<img src="IMAGE15.jpg" alt="TOP-left-IMAGE" class="top-left-image width="200" height="200">
+<img src="Image5.jpg" alt="TOP-left-IMAGE" class="top-left-image width="200" height="200">
+<img src="IMAGE 6.jpg" alt="TOP-left-IMAGE" class="top-left-image width="200" height="200">
+<img src="IMAGE7.jpg" alt="TOP-left-IMAGE" class="top-left-image width="200" height="200">
+<img src="IMAGE23.jpg" alt="Top-left-Image" class="top-left-image width="200" height="200">
+    </section>
+    <section id="contact">
+      <h2></h2>Contact</h2>
+      <p>Location: Edo state, Nigeria</p>
+      <p>Phone: +234 8068899024</p>
+            <p>Email:blessingtunde56@gmail.com</p>
+             <p>Facebook:<a href="https://www.facebook.com/Bessy Tunde">Facebook</a></p>     
+            <p>LinkedIn:
+                <a href="https://www.linkedin.com/in/blessing-tunde-4069462a">LinkedIn</a></p>
+            <p>Twitter:
+                <a href="https://twitter.com/TundeBessy">Twitter</a></p>
+            <p>Instagram:
+                <a href="https://www.instagram.com/tundeblessing">Instagram</a></p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <p>1. Web Development: I can create responsive and user-friendly database websites using HTML, CSS, and JavaScript for my community to improve its security.</p>
+            <p>2. Photography: I can provide photography services for events, portraits, and product shoots.</p>
+            <p>3. Tailoring: I can offer tailoring services for custom clothing and alterations and also offer free training for littles girls after school</p>
+ <img src="IMAGE 211.PNG" alt="TOP-left-IMAGE" class="top-left-image width="200" height="200">
+<img src="IMAGE212.PNG" alt="TOP-left-IMAGE" class="top-left-image width="200" height="200">
+<img src="IMAGE312.PNG" alt="TOP-left-IMAGE" class="top-left-image width="200" height="200">
+<img src="IMAGE19.jpg" alt="TOP-left-IMAGE" class="top-left-image width="200" height="200">
+<img src="IMAGE41.jpg" alt="TOP-left-IMAGE" class="top-left-image width="200" height="200">
+<img src="IMAGE38.jpg" alt="TOP-left-IMAGE" class="top-left-image width="200" height="200">
+<img src="IMAGE39.jpg" alt="TOP-left-IMAGE" class="top-left-image width="200" height="200">
+<img src="IMAGE32.jpg" alt="TOP-left-IMAGE" class="top-left-image width="200" height="200">
+<img src="IMAGE34.jpg" alt="Top-left-Image" class="top-left-image width="200" height="200">
+<img src="IMAGE36.jpg" alt="TOP-left-IMAGE" class="top-left-image width="200" height="200">
+
+    </section>
+
+    <section id="career">
+      <h2>Career</h2>
+      <p>As a seasoned Web development, photography and Fashion Designer, I bring 10 years of experience in Banking/Marketing. My background includes Bosak grassroot empowerment intiative, Fati fashion home, stanbic IBTC pension/sales and marketing, where I've develop expertise in Marketing.<br> I'm known for my personal strengths and have achieved notable achievements currently, I'm seeking to leverage my skills and experence to career goals.</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Blessing profile.</p>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function showTab(tabId, element) {
+      // Show selected section
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(tabId).classList.add('active');
+
+      // Update active nav link
+      document.querySelectorAll('nav a').forEach(link => {
+        link.classList.remove('active');
+      });
+      element.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
